@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Fire VIP Hack Tool 2025</title>
+  <style>
+    :root {
+      --primary: #00ff88;
+      --secondary: #00ccff;
+      --danger: #ff5555;
+      --mod: #ff9900;
+    }
+    
+    body {
+      background-color: #121212;
+      background-image: radial-gradient(circle at 10% 20%, rgba(0,255,136,0.1) 0%, transparent 20%),
+                        radial-gradient(circle at 90% 80%, rgba(0,204,255,0.1) 0%, transparent 20%);
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .hack-panel {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 0, 0.3);
+      max-width: 550px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0, 255, 136, 0.2);
+    }
+
+    .hack-panel::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        to bottom right,
+        transparent 0%,
+        transparent 45%,
+        rgba(0, 255, 136, 0.05) 50%,
+        transparent 55%,
+        transparent 100%
+      );
+      animation: shine 5s infinite;
+      z-index: 0;
+    }
+
+    @keyframes shine {
+      0% { transform: rotate(0deg) translate(-10%, -10%); }
+      100% { transform: rotate(360deg) translate(-10%, -10%); }
+    }
+
+    .panel-header {
+      text-align: center;
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .panel-header h2 {
+      color: var(--primary);
+      margin: 0;
+      font-size: 28px;
+      text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    }
+
+    .panel-header p {
+      color: #aaa;
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    .badge {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background: var(--danger);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      transform: rotate(15deg);
+      box-shadow: 0 0 10px rgba(255, 85, 85, 0.5);
+    }
+
+    .copyright {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: #666;
+      font-size: 11px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    .input-group input, .input-group select {
+      width: 100%;
+      padding: 12px 15px;
+      background-color: rgba(44, 44, 44, 0.8);
+      border: 1px solid #444;
+      color: #fff;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .input-group input:focus, .input-group select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+      outline: none;
+    }
+
+    .input-group button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, var(--secondary), #0099ff);
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 8px;
+    }
+
+    .input-group button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 204, 255, 0.4);
+    }
+
+    .server-mod {
+      background: rgba(255, 153, 0, 0.1);
+      border: 1px solid var(--mod);
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .server-mod label {
+      color: var(--mod);
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .mod-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .mod-option {
+      background: rgba(44, 44, 44, 0.6);
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #444;
+      transition: all 0.3s;
+    }
+
+    .mod-option:hover {
+      border-color: var(--mod);
+    }
+
+    .mod-option label {
+      color: #ddd;
+      font-weight: normal;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .mod-option input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    .options {
+      margin: 25px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .option-item {
+      background: rgba(44, 44, 44, 0.6);
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      transition: all 0.3s;
+    }
+
+    .option-item:hover {
+      border-color: var(--secondary);
+      transform: translateY(-3px);
+    }
+
+    .option-item label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: #ddd;
+    }
+
+    .option-item input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background: #2c2c2c;
+      border: 2px solid #444;
+      border-radius: 5px;
+      margin-right: 10px;
+      position: relative;
+      transition: all 0.2s;
+    }
+
+    .option-item input[type="checkbox"]:checked {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .option-item input[type="checkbox"]:checked::after {
+      content: "✓";
+      position: absolute;
+      color: #000;
+      font-weight: bold;
+      left: 3px;
+      top: -1px;
+    }
+
+    .activate-btn {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, var(--primary), #00cc77);
+      color: #000;
+      border: none;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 16px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .activate-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: all 0.5s;
+      z-index: -1;
+    }
+
+    .activate-btn:hover::before {
+      left: 100%;
+    }
+
+    .activate-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 255, 136, 0.3);
+    }
+
+    .result-box {
+      margin-top: 25px;
+      background: rgba(42, 42, 42, 0.7);
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid var(--secondary);
+      display: none;
+    }
+
+    .success-box {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      display: none;
+      background: rgba(0, 255, 136, 0.1);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.4); }
+      70% { box-shadow: 0 0 0 10px rgba(0, 255, 136, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background: #2c2c2c;
+      border-radius: 3px;
+      margin-top: 15px;
+      overflow: hidden;
+      display: none;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 3px;
+      transition: width 0.3s;
+    }
+
+    .user-count {
+      text-align: center;
+      margin-top: 20px;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    .user-count span {
+      color: var(--secondary);
+      font-weight: bold;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      margin-left: 5px;
+      cursor: help;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -100px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 12px;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* Animation for fake terminal */
+    .terminal {
+      background: #000;
+      color: #0f0;
+      font-family: monospace;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 15px;
+      height: 100px;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .terminal-line {
+      animation: typing 0.5s steps(40, end);
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+  </style>
+</head>
+<body>
+  <div class="hack-panel">
+    <div class="badge">VIP PRO</div>
+    <div class="copyright">Bản quyền © 2025 - Free Fire Ultimate Hack Team</div>
+    
+    <div class="panel-header">
+      <h2>FREE FIRE VIP HACK 2025</h2>
+      <p>Công cụ hack Free Fire mạnh mẽ nhất - Phiên bản đặc biệt</p>
+    </div>
+
+    <div class="input-group">
+      <label for="playerId">ID Người chơi <span class="tooltip">(?)
+        <span class="tooltiptext">Nhập ID Free Fire của bạn (có thể xem trong hồ sơ game)</span>
+      </span></label>
+      <input type="text" id="playerId" placeholder="VD: 1234567890">
+    </div>
+
+    <div class="input-group">
+      <label for="server">Server Chính</label>
+      <select id="server">
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="north-america">North America</option>
+        <option value="south-america">South America</option>
+        <option value="middle-east">Middle East</option>
+      </select>
+    </div>
+
+    <div class="server-mod">
+      <label>Server Mod</label>
+      <div class="mod-options">
+        <div class="mod-option">
+          <label><input type="radio" name="mod" value="vietnam" checked> Vietnam MOD</label>
+        </div>
+        <div class="mod-option">
+          <label><input type="radio" name="mod" value="global"> Global MOD</label>
+        </div>
+        <div class="mod-option">
+          <label><input type="radio" name="mod" value="private"> Private MOD</label>
+        </div>
+        <div class="mod-option">
+          <label><input type="radio" name="mod" value="ultimate"> Ultimate MOD</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label for="pass1">Mật khẩu cấp 1 <span class="tooltip">(?)
+        <span class="tooltiptext">Mật khẩu mặc định là '1' cho bản dùng thử</span>
+      </span></label>
+      <input type="password" id="pass1" placeholder="Nhập mật khẩu cấp 1">
+    </div>
+
+    <div class="input-group">
+      <label for="keyField">Key Kích Hoạt</label>
+      <input type="text" id="keyField" readonly placeholder="Chưa có key">
+      <button onclick="generateKey()">Tạo Key VIP</button>
+    </div>
+
+    <div class="input-group">
+      <label for="ipAddress">IP của bạn</label>
+      <input type="text" id="ipAddress" readonly placeholder="Đang xác thực...">
+    </div>
+
+    <div class="options">
+      <div class="option-item">
+        <label><input type="checkbox" id="aimBot"> AIM BOT PRO</label>
+      </div>
+      <div class="option-item">
+        <label><input type="checkbox" id="wallHack"> WALL HACK</label>
+      </div>
+      <div class="option-item">
+        <label><input type="checkbox" id="speedX5"> TỐC ĐỘ x5</label>
+      </div>
+      <div class="option-item">
+        <label><input type="checkbox" id="noRecoil"> KHÔNG GIẬT</label>
+      </div>
+      <div class="option-item">
+        <label><input type="checkbox" id="autoHeadshot"> HEADSHOT 100%</label>
+      </div>
+      <div class="option-item">
+        <label><input type="checkbox" id="invisible"> TÀNG HÌNH</label>
+      </div>
+    </div>
+
+    <button class="activate-btn" onclick="activateHack()">
+      <span id="btnText">KÍCH HOẠT HACK</span>
+    </button>
+
+    <div class="progress-bar" id="progressBar">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="terminal" id="terminal">
+      <div class="terminal-line">> Initializing system...</div>
+      <div class="terminal-line">> Checking game version...</div>
+      <div class="terminal-line">> Connecting to server...</div>
+      <div class="terminal-line">> Verifying credentials...</div>
+      <div class="terminal-line">> Injecting code...</div>
+    </div>
+
+    <div class="result-box" id="resultBox"></div>
+    <div class="success-box" id="successMessage">HACK KÍCH HOẠT THÀNH CÔNG!</div>
+
+    <div class="user-count">
+      Đang sử dụng: <span id="userCount">0</span> người | Bản quyền © 2025
+    </div>
+  </div>
+
+  <script>
+    // Lấy IP người dùng
+    async function getIpAddress() {
+      try {
+        document.getElementById("ipAddress").placeholder = "Đang lấy IP...";
+        const res = await fetch('https://api.ipify.org?format=json');
+        const data = await res.json();
+        document.getElementById("ipAddress").value = data.ip;
+        
+        // Random user count
+        const randomCount = Math.floor(Math.random() * 5000) + 1000;
+        document.getElementById("userCount").textContent = randomCount.toLocaleString();
+      } catch (e) {
+        document.getElementById("ipAddress").value = "Không xác định";
+      }
+    }
+
+    // Tạo key giả
+    function generateKey() {
+      const btn = document.querySelector('#keyField + button');
+      btn.textContent = "Đang tạo key...";
+      btn.disabled = true;
+      
+      setTimeout(() => {
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        let key = '';
+        for (let i = 0; i < 16; i++) {
+          if (i > 0 && i % 4 === 0) key += '-';
+          key += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        
+        document.getElementById("keyField").value = key;
+        btn.textContent = "Tạo Key VIP";
+        btn.disabled = false;
+        
+        // Hiệu ứng
+        document.getElementById("keyField").style.color = "var(--primary)";
+        document.getElementById("keyField").style.textShadow = "0 0 5px rgba(0, 255, 136, 0.5)";
+        setTimeout(() => {
+          document.getElementById("keyField").style.color = "";
+          document.getElementById("keyField").style.textShadow = "";
+        }, 2000);
+      }, 1500);
+    }
+
+    // Kích hoạt hack
+    function activateHack() {
+      const playerId = document.getElementById("playerId").value;
+      const pass1 = document.getElementById("pass1").value;
+      const key = document.getElementById("keyField").value;
+      const ip = document.getElementById("ipAddress").value;
+      const server = document.getElementById("server").value;
+      const mod = document.querySelector('input[name="mod"]:checked').value;
+      
+      const resultBox = document.getElementById("resultBox");
+      const successMessage = document.getElementById("successMessage");
+      const progressBar = document.getElementById("progressBar");
+      const progress = document.getElementById("progress");
+      const terminal = document.getElementById("terminal");
+      const btnText = document.getElementById("btnText");
+      
+      // Reset UI
+      resultBox.style.display = "none";
+      successMessage.style.display = "none";
+      terminal.style.display = "none";
+      
+      // Validate
+      if (!playerId) {
+        showError("Vui lòng nhập ID người chơi!");
+        return;
+      }
+      
+      if (pass1 !== "1") {
+        showError("Sai mật khẩu cấp 1! Mật khẩu mặc định là '1'");
+        return;
+      }
+      
+      if (!key) {
+        showError("Vui lòng tạo Key VIP trước khi kích hoạt!");
+        return;
+      }
+      
+      // Bắt đầu quá trình "hack"
+      btnText.textContent = "ĐANG KÍCH HOẠT...";
+      document.querySelector('.activate-btn').disabled = true;
+      progressBar.style.display = "block";
+      terminal.style.display = "block";
+      
+      // Hiệu ứng progress bar
+      let progressValue = 0;
+      const progressInterval = setInterval(() => {
+        progressValue += Math.random() * 10;
+        progress.style.width = `${Math.min(progressValue, 100)}%`;
+        
+        if (progressValue >= 100) {
+          clearInterval(progressInterval);
+          setTimeout(() => {
+            showSuccess(playerId, server, mod);
+          }, 500);
+        }
+      }, 200);
+    }
+    
+    function showError(message) {
+      const resultBox = document.getElementById("resultBox");
+      resultBox.innerHTML = `<span style="color: var(--danger)">${message}</span>`;
+      resultBox.style.display = "block";
+      
+      // Hiệu ứng lỗi
+      resultBox.style.animation = "none";
+      void resultBox.offsetWidth; // Trigger reflow
+      resultBox.style.animation = "pulse 0.5s 1";
+    }
+    
+    function showSuccess(playerId, server, mod) {
+      const options = {
+        aimBot: document.getElementById("aimBot").checked,
+        wallHack: document.getElementById("wallHack").checked,
+        speedX5: document.getElementById("speedX5").checked,
+        noRecoil: document.getElementById("noRecoil").checked,
+        autoHeadshot: document.getElementById("autoHeadshot").checked,
+        invisible: document.getElementById("invisible").checked
+      };
+      
+      // Hiển thị thông tin
+      const resultBox = document.getElementById("resultBox");
+      let optionsText = "";
+      
+      for (const [key, value] of Object.entries(options)) {
+        if (value) {
+          const name = key.replace(/([A-Z])/g, ' $1').toUpperCase();
+          optionsText += `<div>✓ ${name}</div>`;
+        }
+      }
+      
+      resultBox.innerHTML = `
+        <div><strong>THÔNG TIN KÍCH HOẠT</strong></div>
+        <div>ID: <span style="color: var(--secondary)">${playerId}</span></div>
+        <div>Server: <span style="color: var(--secondary)">${server.toUpperCase()}</span></div>
+        <div>Mod: <span style="color: var(--mod)">${mod.toUpperCase()} MOD</span></div>
+        <div>Thời gian: <span style="color: var(--secondary)">${new Date().toLocaleString()}</span></div>
+        <div style="margin-top: 10px;"><strong>TÍNH NĂNG ĐÃ KÍCH HOẠT:</strong></div>
+        ${optionsText || "<div>Không có tính năng nào được chọn</div>"}
+      `;
+      
+      resultBox.style.display = "block";
+      successMessage.style.display = "block";
+      
+      // Reset button
+      setTimeout(() => {
+        document.querySelector('.activate-btn').disabled = false;
+        document.getElementById("btnText").textContent = "KÍCH HOẠT HACK";
+        document.getElementById("progressBar").style.display = "none";
+        document.getElementById("progress").style.width = "0%";
+      }, 1000);
+      
+      // Thêm dòng terminal giả
+      const terminal = document.getElementById("terminal");
+      const lines = [
+        "> Injection completed successfully!",
+        "> Bypassing anti-cheat system...",
+        `> Connecting to ${mod.toUpperCase()} MOD server...`,
+        "> All features activated!",
+        `> Player ${playerId} hacked!`,
+        "> Closing connection..."
+      ];
+      
+      let delay = 0;
+      lines.forEach(line => {
+        setTimeout(() => {
+          const div = document.createElement("div");
+          div.className = "terminal-line";
+          div.textContent = line;
+          terminal.appendChild(div);
+          terminal.scrollTop = terminal.scrollHeight;
+        }, delay);
+        delay += 800;
+      });
+    }
+
+    // Tải IP khi mở trang
+    getIpAddress();
+    
+    // Hiệu ứng chữ chạy cho terminal
+    setInterval(() => {
+      const terminal = document.getElementById("terminal");
+      if (terminal.children.length > 15) {
+        terminal.removeChild(terminal.children[0]);
+      }
+    }, 5000);
+  </script>
+</body>
+</html>
